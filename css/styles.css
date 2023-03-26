@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400|Rubik:700|Rubik:900');
+aside {
+    background: yellow;
+    box-sizing: border-box;
+    flex: 1 0 300px;
+    font-size: .8rem;
+}
+
+aside>div {
+    padding: 0 2rem 1rem;
+    position: sticky;
+    top: 0;
+}
+
+aside button {
+    background: linear-gradient(145deg, #d6e600, #ffff00);
+    border-radius: 9px;
+    border-width: 0;
+    box-shadow: 5px 5px 10px #c1cf00, -5px -5px 10px #ffff00;
+}
+
+aside figure {
+    background: yellow;
+    font: 900 italic 1.25rem Rubik;
+    margin: 0;
+    padding: 1rem 0 1rem;
+    position: sticky;
+    top: 0;
+}
+
+aside figure a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+aside figure a:link:hover,
+aside figure a:link:focus {
+    color: inherit;
+    text-decoration: underline;
+}
+
+aside h1,
+aside h2,
+aside h3,
+aside h4,
+aside h5 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 2.4rem 0 1.1rem;
+}
+
+aside h1 {
+    font-size: 2.4rem;
+    margin-top: 0;
+}
+
+aside h2 {
+    font-size: 1.95rem;
+}
+
+aside h3 {
+    font-size: 1.56rem;
+}
+
+aside h4 {
+    font-size: 1.25rem;
+}
+
+aside h5 {
+    font-size: 1rem;
+}
+
+aside small {
+    font-size: 0.64rem;
+}
+
+aside p {
+    margin-bottom: 1rem;
+}
+
+body {
+    background: white;
+    color: #000000;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    line-height: 1.70;
+    margin: 0;
+    width: auto;
+}
+
+html {
+    font-size: 1.125rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    flex: 1 1 auto;
+    padding: 1rem 2rem;
+}
+
+section button {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    border-radius: 9px;
+    border-width: 0;
+    box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+}
+
+section h1,
+section h2,
+section h3,
+section h4,
+section h5 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 3rem 0 1.38rem;
+}
+
+section h1 {
+    font-size: 3.052rem;
+    margin-top: 0;
+}
+
+section h2 {
+    font-size: 2.441rem;
+}
+
+section h3 {
+    font-size: 1.953rem;
+}
+
+section h4 {
+    font-size: 1.563rem;
+}
+
+section h5 {
+    font-size: 1.25rem;
+}
+
+section small {
+    font-size: 0.8rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
