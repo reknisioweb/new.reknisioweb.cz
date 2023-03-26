@@ -103,8 +103,10 @@
         }
         
         aside img[alt="obálka knihy"] {
-            width: 210px;
-            box-shadow: 5px 5px 10px black;
+            width: 210px;           
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                transform: rotate(-0.25turn);
+                
         }
         
         aside input[type=email] {
