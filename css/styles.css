@@ -105,7 +105,7 @@
         aside img[alt="obálka knihy"] {
             width: 210px;           
                 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-                transform: rotate(-0.25turn);
+                transform: rotate(-0.03turn);
                 
         }
         
