@@ -12,18 +12,27 @@ aside>div {
     top: 0;
 }
 
-aside button {
-    background: linear-gradient(145deg, #d6e600, #ffff00);
-    border-radius: 9px;
-    border-width: 0;
-    box-shadow: 5px 5px 10px #c1cf00, -5px -5px 10px #ffff00;
+aside button,
+aside input[type=submit] {
+    background-color: white;
+    border: none;
+    box-shadow: 5px 5px 0 black;
+    font: 300 1em Rubik;
+    letter-spacing: .1em;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+}
+
+aside button:hover,
+aside input[type=submit]:hover {
+    filter: invert(100%);
 }
 
 aside figure {
     background: yellow;
     font: 900 italic 1.25rem Rubik;
     margin: 0;
-    padding: 1rem 0 1rem;
+    padding: 1rem 0 0;
     position: sticky;
     top: 0;
 }
@@ -52,7 +61,7 @@ aside h5 {
 
 aside h1 {
     font-size: 2.4rem;
-    margin-top: 0;
+    margin-block: 0.5rem 1rem;
 }
 
 aside h2 {
@@ -61,6 +70,7 @@ aside h2 {
 
 aside h3 {
     font-size: 1.56rem;
+    margin-block: 1rem 0;
 }
 
 aside h4 {
@@ -69,6 +79,19 @@ aside h4 {
 
 aside h5 {
     font-size: 1rem;
+}
+
+aside img[alt="obálka knihy"] {
+    width: 210px;
+    box-shadow: 5px 5px 10px black;
+}
+
+aside input[type=email] {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0 black;
+    font: 300 1em Rubik;
+    padding: .5rem 1rem;
 }
 
 aside small {
@@ -83,19 +106,68 @@ body {
     background: white;
     color: #000000;
     font-family: 'PT Serif', serif;
+    -moz-font-feature-settings: "onum";
+    -webkit-font-feature-settings: "onum";
+    font-feature-settings: "onum";
+    font-variant-numeric: oldstyle-nums;
     font-weight: 400;
     line-height: 1.70;
     margin: 0;
     width: auto;
 }
 
+button>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+cite>img {
+    border-radius: 50%;
+    float: left;
+    margin-inline-end: .5rem;
+    object-fit: cover;
+}
+
+figure>blockquote {
+    margin-inline: 0;
+    margin-block-start: 0.5rem;
+}
+
 html {
     font-size: 1.125rem;
+}
+
+hr {
+    clear: both;
+}
+
+span:has(>[data-author]) {
+    filter: drop-shadow(5px 5px 10px rgba(50, 50, 50, 0.5));
+    float: left;
+    margin-inline-end: 2rem;
+}
+
+img[data-author] {
+    clip-path: circle(105px at 50% 35%);
+    width: 210px;
 }
 
 main {
     display: flex;
     flex-direction: row;
+}
+
+p:has([alt="ukázka z knihy"]) {
+    margin-block-end: 2rem;
+    text-align: center;
+}
+
+[alt="ukázka z knihy"] {
+    box-shadow: 5px 5px 10px silver;
+    display: block;
+    margin-block: 1rem;
+    margin-inline: auto;
+    max-width: 500px;
 }
 
 section {
@@ -104,10 +176,28 @@ section {
 }
 
 section button {
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    border-radius: 9px;
-    border-width: 0;
-    box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+    background-color: yellow;
+    border: none;
+    box-shadow: 5px 5px 0 black;
+    font: 300 1em Rubik;
+    letter-spacing: .1em;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+}
+
+section button:hover {
+    background-color: black;
+    box-shadow: 5px 5px 0 yellow;
+    color: white;
+}
+
+section figure {
+    margin-inline: 0;
+    margin-block-end: 2rem;
+}
+
+section figure:has([data-author]) {
+    clear: both;
 }
 
 section h1,
@@ -142,10 +232,14 @@ section h5 {
     font-size: 1.25rem;
 }
 
+section p {
+    margin-bottom: 1rem;
+}
+
 section small {
     font-size: 0.8rem;
 }
 
-section p {
-    margin-bottom: 1rem;
+[data-noshow] {
+    display: none;
 }
