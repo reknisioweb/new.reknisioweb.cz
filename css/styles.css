@@ -11,6 +11,15 @@
             }
         }
         
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            html {
+                font-size: 1rem;
+            }
+            p>[alt="ukázka z knihy"] {
+                width: 250px;
+            }
+        }
+        
         aside {
             background: yellow;
             box-sizing: border-box;
@@ -180,7 +189,7 @@
             display: block;
             margin-block: 1rem;
             margin-inline: auto;
-            width: 500px;
+            max-width: 500px;
         }
         
         section {
