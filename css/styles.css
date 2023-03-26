@@ -106,7 +106,7 @@
             width: 100%;           
                 
                 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-                transform: rotate(-0.01turn);
+
                 
         }
         
@@ -280,6 +280,7 @@
   }
   100% {
     transform: scale(1);
+	  transform: rotate(-0.01turn);
   }
 }
  
