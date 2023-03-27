@@ -3,19 +3,21 @@
             body>main {
                 flex-direction: column;
             }
-            html {
+            html[lang],
+            html aside {
                 font-size: 1rem;
             }
-            p>[alt="ukázka z knihy"] {
+            html p>[alt="ukázka z knihy"] {
                 width: 250px;
             }
         }
         
         @media screen and (min-width: 768px) and (max-width: 992px) {
-            html {
+            html[lang],
+            html aside {
                 font-size: 1rem;
             }
-            p>[alt="ukázka z knihy"] {
+            html p>[alt="ukázka z knihy"] {
                 width: 250px;
             }
         }
@@ -33,8 +35,7 @@
             top: 0;
         }
         
-        aside button,
-        aside input[type=submit] {
+        aside button {
             background-color: white;
             border: none;
             box-shadow: 5px 5px 0 black;
@@ -44,9 +45,19 @@
             text-transform: uppercase;
         }
         
-        aside button:hover,
-        aside input[type=submit]:hover {
-            filter: invert(100%);
+        aside button:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 5px 5px 0 white;
+        }
+        
+        aside button>a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        aside button:hover>a {
+            color: white;
         }
         
         aside figure {
@@ -103,11 +114,8 @@
         }
         
         aside img[alt="obálka knihy"] {
-            width: 100%;           
-                
-                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
-                
+            width: 100%;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
         }
         
         aside input[type=email] {
@@ -138,11 +146,6 @@
             line-height: 1.70;
             margin: 0;
             width: auto;
-        }
-        
-        button>a {
-            color: inherit;
-            text-decoration: none;
         }
         
         cite>img {
@@ -216,6 +219,15 @@
             color: white;
         }
         
+        section button>a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        section button:hover>a {
+            color: white;
+        }
+        
         section figure {
             margin-inline: 0;
             margin-block-end: 2rem;
@@ -268,22 +280,22 @@
         [data-noshow] {
             display: none;
         }
-
-/**
+        /**
  * ----------------------------------------
  * animation scale-up-center
  * ----------------------------------------
  */
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-	  transform: rotate(-0.01turn);
-  }
-}
- 
-.scale-up-center {
-	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
+        
+        @keyframes scale-up-center {
+            0% {
+                transform: scale(0.5);
+            }
+            100% {
+                transform: scale(1);
+                transform: rotate(-0.01turn);
+            }
+        }
+        
+        .scale-up-center {
+            animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
