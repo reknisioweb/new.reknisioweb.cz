@@ -1,301 +1,318 @@
-        @import url('https://fonts.googleapis.com/css?family=PT+Serif:400|Rubik:700|Rubik:900');
-        @media screen and (max-width: 768px) {
-            body>main {
-                flex-direction: column;
+            @import url('https://fonts.googleapis.com/css?family=PT+Serif:400|Rubik:700|Rubik:900');
+            @media screen and (max-width: 768px) {
+                body>main {
+                    flex-direction: column;
+                }
+                html[lang],
+                html section {
+                    font-size: 1rem;
+                }
+                html p>[alt="ukázka z knihy"] {
+                    width: 250px;
+                }
             }
-            html[lang],
-            html aside {
+            
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                html[lang],
+                html aside {
+                    font-size: 1rem;
+                }
+                html p>[alt="ukázka z knihy"] {
+                    width: 250px;
+                }
+            }
+            
+            aside {
+                background: yellow;
+                box-sizing: border-box;
+                flex: 1 0 400px;
+                font-size: .8rem;
+            }
+            
+            aside>div {
+                padding: 0 2rem 3rem;
+                position: sticky;
+                top: 0;
+            }
+            
+            aside button {
+                background-color: white;
+                border: none;
+                box-shadow: 5px 5px 0 black;
+                color: black;
+                font: 300 1em Rubik;
+                letter-spacing: .1em;
+                padding: .5rem 1rem;
+                text-transform: uppercase;
+            }
+            
+            aside button:hover {
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 0 white;
+            }
+            
+            aside button>a {
+                color: black;
+                text-decoration: none;
+            }
+            
+            aside button:hover>a {
+                color: white;
+            }
+            
+            aside figure {
+                background: linear-gradient(to bottom, yellow 0, yellow 2.5rem, transparent 100%);
+                font: 900 italic 1.25rem Rubik;
+                margin: 0 -2rem -3rem;
+                padding: 1rem 2rem 3rem;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+            }
+            
+            aside figure a:link {
+                color: inherit;
+                text-decoration: none;
+            }
+            
+            aside figure a:link:hover,
+            aside figure a:link:focus {
+                color: inherit;
+                text-decoration: underline;
+            }
+            
+            aside h1,
+            aside h2,
+            aside h3,
+            aside h4,
+            aside h5 {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 700;
+                line-height: 1.3;
+                margin: 2.4rem 0 1.1rem;
+            }
+            
+            aside h1 {
+                font-size: 2.4rem;
+                margin-block: 0.5rem 1rem;
+            }
+            
+            aside h2 {
+                font-size: 1.95rem;
+            }
+            
+            aside h3 {
+                font-size: 1.56rem;
+                margin-block: 1rem 0;
+            }
+            
+            aside h4 {
+                font-size: 1.25rem;
+            }
+            
+            aside h5 {
                 font-size: 1rem;
             }
-            html p>[alt="ukázka z knihy"] {
-                width: 250px;
+            
+            aside img[alt="obálka knihy"] {
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+                margin-block: 1rem .5rem;
+                position: relative;
+                width: 100%;
+                z-index: 1;
             }
-        }
-        
-        @media screen and (min-width: 768px) and (max-width: 992px) {
-            html[lang],
-            html aside {
-                font-size: 1rem;
+            
+            aside input[type=email] {
+                background-color: white;
+                border: 2px solid black;
+                box-shadow: 3px 3px 0 black;
+                font: 300 1em Rubik;
+                padding: .5rem 1rem;
             }
-            html p>[alt="ukázka z knihy"] {
-                width: 250px;
+            
+            aside small {
+                font-size: 0.64rem;
             }
-        }
-        
-        aside {
-            background: yellow;
-            box-sizing: border-box;
-            flex: 1 0 400px;
-            font-size: .8rem;
-        }
-        
-        aside>div {
-            padding: 0 2rem 3rem;
-            position: sticky;
-            top: 0;
-        }
-        
-        aside button {
-            background-color: white;
-            border: none;
-            box-shadow: 5px 5px 0 black;
-            font: 300 1em Rubik;
-            letter-spacing: .1em;
-            padding: .5rem 1rem;
-            text-transform: uppercase;
-        }
-        
-        aside button:hover {
-            background-color: black;
-            color: white;
-            box-shadow: 5px 5px 0 white;
-        }
-        
-        aside button>a {
-            color: black;
-            text-decoration: none;
-        }
-        
-        aside button:hover>a {
-            color: white;
-        }
-        
-        aside figure {
-            background: yellow;
-            font: 900 italic 1.25rem Rubik;
-            margin: 0;
-            padding: 1rem 0 0;
-            position: sticky;
-            top: 0;
-        }
-        
-        aside figure a:link {
-            color: inherit;
-            text-decoration: none;
-        }
-        
-        aside figure a:link:hover,
-        aside figure a:link:focus {
-            color: inherit;
-            text-decoration: underline;
-        }
-        
-        aside h1,
-        aside h2,
-        aside h3,
-        aside h4,
-        aside h5 {
-            font-family: 'Rubik', sans-serif;
-            font-weight: 700;
-            line-height: 1.3;
-            margin: 2.4rem 0 1.1rem;
-        }
-        
-        aside h1 {
-            font-size: 2.4rem;
-            margin-block: 0.5rem 1rem;
-        }
-        
-        aside h2 {
-            font-size: 1.95rem;
-        }
-        
-        aside h3 {
-            font-size: 1.56rem;
-            margin-block: 1rem 0;
-        }
-        
-        aside h4 {
-            font-size: 1.25rem;
-        }
-        
-        aside h5 {
-            font-size: 1rem;
-        }
-        
-        aside img[alt="obálka knihy"] {
-            width: 100%;
-            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        }
-        
-        aside input[type=email] {
-            background-color: white;
-            border: 2px solid black;
-            box-shadow: 3px 3px 0 black;
-            font: 300 1em Rubik;
-            padding: .5rem 1rem;
-        }
-        
-        aside small {
-            font-size: 0.64rem;
-        }
-        
-        aside p {
-            margin-bottom: 1rem;
-        }
-        
-        body {
-            background: white;
-            color: #000000;
-            font-family: 'PT Serif', serif;
-            -moz-font-feature-settings: "onum";
-            -webkit-font-feature-settings: "onum";
-            font-feature-settings: "onum";
-            font-variant-numeric: oldstyle-nums;
-            font-weight: 400;
-            line-height: 1.70;
-            margin: 0;
-            width: auto;
-        }
-        
-        cite>img {
-            border-radius: 50%;
-            float: left;
-            margin-inline-end: .5rem;
-            object-fit: cover;
-        }
-        
-        figure>blockquote {
-            margin-inline: 0;
-            margin-block-start: 0.5rem;
-        }
-        
-        html {
-            font-size: 1.125rem;
-        }
-        
-        hr {
-            clear: both;
-        }
-        
-        span:has(>[data-author]) {
-            filter: drop-shadow(5px 5px 10px rgba(50, 50, 50, 0.5));
-            float: left;
-            margin-inline-end: 2rem;
-        }
-        
-        img[data-author] {
-            clip-path: circle(105px at 50% 35%);
-            max-width: 210px;
-            min-width: 150px;
-        }
-        
-        main {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        p:has([alt="ukázka z knihy"]) {
-            margin-block-end: 2rem;
-            text-align: center;
-        }
-        
-        [alt="ukázka z knihy"] {
-            box-shadow: 5px 5px 10px silver;
-            display: block;
-            margin-block: 1rem;
-            margin-inline: auto;
-            max-width: 500px;
-        }
-        
-        section {
-            flex: 1 1 auto;
-            padding: 1rem 2rem;
-        }
-        
-        section button {
-            background-color: yellow;
-            border: none;
-            box-shadow: 5px 5px 0 black;
-            font: 300 1em Rubik;
-            letter-spacing: .1em;
-            padding: .5rem 1rem;
-            text-transform: uppercase;
-        }
-        
-        section button:hover {
-            background-color: black;
-            box-shadow: 5px 5px 0 yellow;
-            color: white;
-        }
-        
-        section button>a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        section button:hover>a {
-            color: white;
-        }
-        
-        section figure {
-            margin-inline: 0;
-            margin-block-end: 2rem;
-        }
-        
-        section figure:has([data-author]) {
-            clear: both;
-        }
-        
-        section h1,
-        section h2,
-        section h3,
-        section h4,
-        section h5 {
-            font-family: 'Rubik', sans-serif;
-            font-weight: 700;
-            line-height: 1.3;
-            margin: 3rem 0 1.38rem;
-        }
-        
-        section h1 {
-            font-size: 3.052rem;
-            margin-top: 0;
-        }
-        
-        section h2 {
-            font-size: 2.441rem;
-        }
-        
-        section h3 {
-            font-size: 1.953rem;
-        }
-        
-        section h4 {
-            font-size: 1.563rem;
-        }
-        
-        section h5 {
-            font-size: 1.25rem;
-        }
-        
-        section p {
-            margin-bottom: 1rem;
-        }
-        
-        section small {
-            font-size: 0.8rem;
-        }
-        
-        [data-noshow] {
-            display: none;
-        }
-        /**
+            
+            aside p {
+                margin-bottom: 1rem;
+            }
+            
+            body {
+                background: white;
+                color: #000000;
+                font-family: 'PT Serif', serif;
+                -moz-font-feature-settings: "onum";
+                -webkit-font-feature-settings: "onum";
+                font-feature-settings: "onum";
+                font-variant-numeric: oldstyle-nums;
+                font-weight: 400;
+                line-height: 1.70;
+                margin: 0;
+                width: auto;
+            }
+            
+            cite>img {
+                border-radius: 50%;
+                float: left;
+                margin-inline-end: .5rem;
+                object-fit: cover;
+            }
+            
+            figure>blockquote {
+                margin-inline: 0;
+                margin-block-start: 0.5rem;
+            }
+            
+            html {
+                font-size: 1.125rem;
+            }
+            
+            hr {
+                clear: both;
+            }
+            
+            span:has(>img[data-author]) {
+                filter: drop-shadow(5px 5px 10px rgba(50, 50, 50, 0.5));
+                float: left;
+                margin-inline-end: 2rem;
+            }
+            
+            img[data-author] {
+                clip-path: circle(105px at 50% 35%);
+                max-width: 210px;
+                min-width: 150px;
+            }
+            
+            main {
+                display: flex;
+                flex-direction: row;
+            }
+            
+            p:has([alt="ukázka z knihy"]) {
+                margin-block-end: 2rem;
+                text-align: center;
+            }
+            
+            [alt="ukázka z knihy"] {
+                box-shadow: 5px 5px 10px silver;
+                display: block;
+                margin-block: 1rem;
+                margin-inline: auto;
+                max-width: 500px;
+            }
+            
+            section {
+                flex: 1 1 auto;
+                padding: 1rem 2rem;
+            }
+            
+            section button {
+                background-color: yellow;
+                border: none;
+                box-shadow: 5px 5px 0 black;
+                color: black;
+                font: 300 1em Rubik;
+                letter-spacing: .1em;
+                padding: .5rem 1rem;
+                text-transform: uppercase;
+            }
+            
+            section button:hover {
+                background-color: black;
+                box-shadow: 5px 5px 0 yellow;
+                color: white;
+            }
+            
+            section button>a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            section button:hover>a {
+                color: white;
+            }
+            
+            section figure {
+                margin-inline: 0;
+                margin-block-end: 2rem;
+            }
+            
+            section figure:has([data-author]) {
+                clear: both;
+            }
+            
+            section figure:hover,
+            section h1:hover,
+            section h2:hover,
+            section h3:hover,
+            section h4:hover,
+            section h5:hover,
+            section p:hover,
+            section ul:hover {
+                box-shadow: -8px 0 0 0 white, -12px 0 0 0 silver;
+            }
+            
+            section h1,
+            section h2,
+            section h3,
+            section h4,
+            section h5 {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 700;
+                line-height: 1.3;
+                margin: 3rem 0 1.38rem;
+            }
+            
+            section h1 {
+                font-size: 3.052rem;
+                margin-top: 0;
+            }
+            
+            section h2 {
+                font-size: 2.441rem;
+            }
+            
+            section h3 {
+                font-size: 1.953rem;
+            }
+            
+            section h4 {
+                font-size: 1.563rem;
+            }
+            
+            section h5 {
+                font-size: 1.25rem;
+            }
+            
+            section p {
+                margin-bottom: 1rem;
+            }
+            
+            section small {
+                font-size: 0.8rem;
+            }
+            
+            [data-noshow] {
+                display: none;
+            }
+            /**
  * ----------------------------------------
  * animation scale-up-center
  * ----------------------------------------
  */
-        
-        @keyframes scale-up-center {
-            0% {
-                transform: scale(0.5);
+            
+            @keyframes scale-up-center {
+                0% {
+                    transform: scale(0.5);
+                }
+                100% {
+                    transform: scale(1);
+                    transform: rotate(-0.01turn);
+                }
             }
-            100% {
-                transform: scale(1);
-                transform: rotate(-0.01turn);
+            
+            .scale-up-center {
+                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             }
-        }
-        
-        .scale-up-center {
-            animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        }
