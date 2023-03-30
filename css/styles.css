@@ -234,6 +234,10 @@
                 color: white;
             }
             
+            section cite strong {
+                font-style: normal;
+            }
+            
             section figure {
                 margin-inline: 0;
                 margin-block-end: 2rem;
