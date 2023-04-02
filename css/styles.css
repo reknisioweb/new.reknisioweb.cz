@@ -241,6 +241,7 @@
             section figure {
                 margin-inline: 0;
                 margin-block-end: 2rem;
+                        padding-right: 2rem;
             }
             
             section figure:has([data-author]) {
