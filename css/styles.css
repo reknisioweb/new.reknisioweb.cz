@@ -242,22 +242,11 @@
             section figure {
                 margin-inline: 0;
                 margin-block-end: 2rem;
-                        padding-right: 2rem;
+                padding-right: 2rem;
             }
             
             section figure:has([data-author]) {
                 clear: both;
-            }
-            
-            section figure:hover,
-            section h1:hover,
-            section h2:hover,
-            section h3:hover,
-            section h4:hover,
-            section h5:hover,
-            section p:hover,
-            section ul:hover {
-                box-shadow: -8px 0 0 0 white, -12px 0 0 0 silver;
             }
             
             section h1,
