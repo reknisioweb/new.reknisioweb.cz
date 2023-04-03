@@ -61,27 +61,6 @@
                 color: white;
             }
             
-            aside figure {
-                background: linear-gradient(to bottom, yellow 0, yellow 2.5rem, transparent 100%);
-                font: 900 italic 1.25rem Rubik;
-                margin: 0 -2rem -3rem;
-                padding: 1rem 2rem 3rem;
-                position: sticky;
-                top: 0;
-                z-index: 2;
-            }
-            
-            aside figure a:link {
-                color: inherit;
-                text-decoration: none;
-            }
-            
-            aside figure a:link:hover,
-            aside figure a:link:focus {
-                color: inherit;
-                text-decoration: underline;
-            }
-            
             aside h1,
             aside h2,
             aside h3,
@@ -163,7 +142,17 @@
             figure>blockquote {
                 margin-inline: 0;
                 margin-block-start: 0.5rem;
-                margin-right: 50rem;
+                padding-inline: 2.1rem 5rem;
+                position: relative;
+            }
+            
+            figure>blockquote::before {
+                content: "”";
+                color: silver;
+                font-size: 96px;
+                position: absolute;
+                top: -2.5rem;
+                left: -.6rem;
             }
             
             html {
@@ -237,6 +226,23 @@
             
             section cite strong {
                 font-style: normal;
+            }
+            
+            section header {
+                font: 900 italic 1.25rem Rubik;
+                margin: 0 -2rem 1rem 0;
+                padding: 1rem 2rem 0 0;
+            }
+            
+            section header a:link {
+                color: inherit;
+                text-decoration: none;
+            }
+            
+            section header a:link:hover,
+            section header a:link:focus {
+                color: inherit;
+                text-decoration: underline;
             }
             
             section figure {
