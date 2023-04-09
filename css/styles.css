@@ -150,6 +150,7 @@
                 float: left;
                 margin-inline-end: .5rem;
                 object-fit: cover;
+                max-width: 30px;
             }
             
             figure>blockquote {
