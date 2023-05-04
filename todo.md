@@ -1,7 +1,7 @@
 # TODO 
 
 * [ ] Hero section s responzivním cover image 
-* [ ] Sekci s ukázkou z knihy a la https://www.melvil.cz/kniha-jak-na-site/#:~:text=t%C3%ADm%20v%C5%A1%C3%ADm%20pomohou%3F-,PROLISTUJTE%20SI,-St%C3%A1hnout
+* [ ] Sekci s ukázkou z knihy a la [Melvil](https://www.melvil.cz/kniha-jak-na-site/#:~:text=t%C3%ADm%20v%C5%A1%C3%ADm%20pomohou%3F-,PROLISTUJTE%20SI,-St%C3%A1hnout)
 * [ ] Rozepsat sekci Pro koho a proč jsme knihu psali?
 * [ ] Vyhezčit odrážkový seznam Co se dozvím v knížce
 * [ ] Doplnit ikonky k sekci Rarametry knihy
