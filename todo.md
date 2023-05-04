@@ -1,3 +1,7 @@
+---
+title: Co ještě chybí dodělat na webu (#řeknisioweb)
+---
+
 # TODO 
 
 * [ ] Hero section s responzivním cover image 
