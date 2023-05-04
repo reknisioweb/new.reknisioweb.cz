@@ -1,6 +1,5 @@
 ---
 title: Co ještě chybí dodělat na webu (#řeknisioweb)
-site.title: #řeknisioweb
 ---
 
 # TODO 
