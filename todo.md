@@ -15,6 +15,6 @@ title: Co ještě chybí dodělat na webu (#řeknisioweb)
 [melvil]: https://www.melvil.cz/kniha-jak-na-site/#:~:text=t%C3%ADm%20v%C5%A1%C3%ADm%20pomohou%3F-,PROLISTUJTE%20SI,-St%C3%A1hnout "Prolistujte si"
 
 <style>
-    .task-list-item {listy-style-type: none;}
+    .task-list-item {list-style-type: none;}
     .task-list-item-checkbox {margin-inline-end: 1ex;}
 </style>
