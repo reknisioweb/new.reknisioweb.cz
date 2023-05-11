@@ -58,7 +58,6 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-HFFN6HTH6J');
 gtag('consent', 'default', {
-    'ad_storage': 'denied',
     'analytics_storage': 'denied'
 });
 
