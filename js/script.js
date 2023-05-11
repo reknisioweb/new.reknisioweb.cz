@@ -8,6 +8,7 @@ const dataPrivacy = function (action) {
                 'analytics_storage': 'granted'
             });
             document.cookie = "consent=granted; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; domain=reknisioweb.cz; secure";
+            console.log(action)
             break;
         case "disallow": // Kliknul na Zakázat
             var cookieBar = document.querySelector("[data-privacy]");
@@ -21,6 +22,7 @@ const dataPrivacy = function (action) {
             exp.setUTCFullYear(exp.getUTCFullYear + 1)
 
             document.cookie = `consent=denied; expires=${exp.toUTCString()}; path=/; domain=reknisioweb.cz; secure`;
+            console.log(action)
             break;
         default:
             const cookies = {};
@@ -34,6 +36,7 @@ const dataPrivacy = function (action) {
                     'analytics_storage': 'granted'
                 });
                 document.querySelector("[data-privacy] button").addEventListener("click", () => { dataPrivacy("disallow"); })
+                console.log("default consent")
             }
             break;
     }
