@@ -7,7 +7,7 @@ const dataPrivacy = function (action) {
             gtag('consent', 'update', {
                 'analytics_storage': 'granted'
             });
-            document.cookie = "consent=granted; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; domain=reknisioweb.cz; secure";
+            localStorage.setItem("consent","granted");
             console.log(action)
             break;
         case "disallow": // Kliknul na Zakázat
@@ -21,7 +21,7 @@ const dataPrivacy = function (action) {
             const exp = new Date();
             exp.setUTCFullYear(exp.getUTCFullYear + 1)
 
-            document.cookie = `consent=denied; expires=${exp.toUTCString()}; path=/; domain=reknisioweb.cz; secure`;
+            localStorage.setItem("consent","denied");
             document.cookie = `_ga_HFFN6HTH6J=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; domain=reknisioweb.cz; secure`;
             document.cookie = `_ga=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; domain=reknisioweb.cz; secure`;
             console.log(action)
@@ -33,8 +33,8 @@ const dataPrivacy = function (action) {
                     Object.assign(cookies, JSON.parse(`{ "${cookie.split(/\s*=\s*/).join('": "')}" }`))
                 });
             }
-            if (cookies.hasOwnProperty("consent")) {
-                if (cookies["consent"].toLowerCase().indexOf("denied") == 0)
+            if (localStorage.getItem("consent") !== null) {
+                if (localStorage.getItem("consent").toLowerCase() === "denied")
                     dataPrivacy("disallow");
             } else {
                 gtag('consent', 'update', {
