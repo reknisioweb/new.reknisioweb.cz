@@ -56,9 +56,11 @@ const ready = function (fn, ...args) {
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
-gtag('config', 'G-HFFN6HTH6J');
 gtag('consent', 'default', {
-    'analytics_storage': 'denied'
+    'analytics_storage': 'denied',
+    'region': ['CZ']
+
 });
+gtag('config', 'G-HFFN6HTH6J');
 
 ready(dataPrivacy);
