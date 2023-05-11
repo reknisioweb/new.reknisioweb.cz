@@ -31,8 +31,9 @@ const dataPrivacy = function (action) {
                     Object.assign(cookies, JSON.parse(`{ "${cookie.split(/\s*=\s*/).join('": "')}" }`))
                 });
             }
-            if (cookies.hasOwn(consent) && cookies.consent.toLowerCase().indexOf("denied") == 0) {
-                dataPrivacy("disallow");
+            if (cookies.hasOwn(consent)) {
+                if (cookies["consent"].toLowerCase().indexOf("denied") == 0)
+                    dataPrivacy("disallow");
             } else {
                 gtag('consent', 'update', {
                     'analytics_storage': 'granted'
