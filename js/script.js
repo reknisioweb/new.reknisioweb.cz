@@ -26,9 +26,11 @@ const dataPrivacy = function (action) {
             break;
         default:
             const cookies = {};
-            document.cookie.split(/\s*;\s*/).forEach((cookie) => {
-                Object.assign(cookies, JSON.parse(`{ "${cookie.split(/\s*=\s*/).join('": "')}" }`))
-            });
+            if (document.cookie.length > 0) {
+                document.cookie.split(/\s*;\s*/).forEach((cookie) => {
+                    Object.assign(cookies, JSON.parse(`{ "${cookie.split(/\s*=\s*/).join('": "')}" }`))
+                });
+            }
             if (cookies.hasOwn(consent) && cookies.consent.toLowerCase().indexOf("denied") == 0) {
                 dataPrivacy("disallow");
             } else {
