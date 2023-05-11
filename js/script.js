@@ -57,9 +57,7 @@ window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('consent', 'default', {
-    'analytics_storage': 'denied',
-    'region': ['CZ']
-
+    'analytics_storage': 'denied'
 });
 gtag('config', 'G-HFFN6HTH6J');
 
