@@ -31,7 +31,7 @@ const dataPrivacy = function (action) {
                     Object.assign(cookies, JSON.parse(`{ "${cookie.split(/\s*=\s*/).join('": "')}" }`))
                 });
             }
-            if (cookies.hasOwn(consent)) {
+            if (cookies.hasOwn("consent")) {
                 if (cookies["consent"].toLowerCase().indexOf("denied") == 0)
                     dataPrivacy("disallow");
             } else {
