@@ -2,8 +2,8 @@ const dataPrivacy = function (action) {
     switch (action) {
         case "allow": // Kliknul na Povolit
             var cookieBar = document.querySelector("[data-privacy]");
-            cookieBar.innerHTML('<small>Tento web ukládá do prohlížeče cookie první strany pro analýzy návštěvnost (<a href="https://support.google.com/analytics/topic/2919631">Google Analytics</a>). <button>Nesouhlasím</button></small>')
-            cookieBar.getElementsByTagName("button")[0].addEventListener("click", () => { dataPrivacy("allow"); })
+            cookieBar.innerHTML('<small>Tento web ukládá do prohlížeče cookie první strany pro analýzy návštěvnost (<a href="https://support.google.com/analytics/topic/2919631">Google Analytics</a>). <button>Zakázat</button></small>')
+            cookieBar.getElementsByTagName("button")[0].addEventListener("click", () => { dataPrivacy("disallow"); })
             gtag('consent', 'update', {
                 'analytics_storage': 'granted'
             });
@@ -33,6 +33,7 @@ const dataPrivacy = function (action) {
                 gtag('consent', 'update', {
                     'analytics_storage': 'granted'
                 });
+                document.querySelector("[data-privacy] button").addEventListener("click", () => { dataPrivacy("disallow"); })
             }
             break;
     }
