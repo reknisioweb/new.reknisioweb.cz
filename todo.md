@@ -4,6 +4,7 @@ title: Co ještě chybí dodělat na webu (#řeknisioweb)
 
 # TODO 
 
+* [ ] Zvětšit zpátky logo
 * [ ] Reponsivní ```book-cover.jpg```
 * [ ] Rozepsat sekci *Pro koho a proč jsme knihu psali?*
 * [ ] Vyhezčit odrážkový seznam *Co se dozvím v knížce*
