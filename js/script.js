@@ -22,6 +22,8 @@ const dataPrivacy = function (action) {
             exp.setUTCFullYear(exp.getUTCFullYear + 1)
 
             document.cookie = `consent=denied; expires=${exp.toUTCString()}; path=/; domain=reknisioweb.cz; secure`;
+            document.cookie = `_ga_HFFN6HTH6J=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; domain=reknisioweb.cz; secure`;
+            document.cookie = `_ga=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; domain=reknisioweb.cz; secure`;
             console.log(action)
             break;
         default:
