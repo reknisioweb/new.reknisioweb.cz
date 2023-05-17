@@ -186,7 +186,7 @@
             
             footer figure a:link,
             header figure a:link {
-                color: inherit;
+                color: black;
                 text-decoration: none;
             }
             
@@ -194,7 +194,7 @@
             footer figure a:link:focus,
             header figure a:link:hover,
             header figure a:link:focus {
-                color: inherit;
+                color: black;
                 text-decoration: underline;
             }
             
