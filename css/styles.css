@@ -107,7 +107,7 @@
                 font-size: 1rem;
             }
             
-            aside img[alt="obálka knihy"] {
+            aside img.scale-up-center {
                 box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
                 margin-block: 1rem .5rem;
                 position: relative;
